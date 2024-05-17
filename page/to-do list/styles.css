@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    
+    background: url(img/5423403.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.container {
+    width: 600px;
+    height: 900px;
+    margin: auto;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #f3f3f3;
+    
+    border-radius: 10px;
+    box-shadow: -3px -4px 47px -11px rgba(0,0,0,0.1);
+
+    overflow: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    border-bottom: 1px solid rgba(00, 00, 00, .1);
+}
+
+.containerAdd {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.containerAdd input {
+    width: 70%;
+    height: 40px;
+    border: 1px solid rgba(00, 00, 00, .2);
+    border-radius: 2px;
+    outline: none;
+    padding-left: 20px;
+
+}
+
+.containerAdd button {
+    width: 25%;
+    height: 40px;
+
+    border: none;
+    border-radius: 2px;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    background-color: #719646;
+    color: white;
+    cursor: pointer;
+}
+
+.containerAdd button:hover {
+    background-color: #61823d ;
+    transition: .5s ease;
+}
+
+.task-list {
+    width: 100%;
+    margin-top: 40px;
+}
+
+ul .task {
+    list-style: none;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(00, 00, 00, .1);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ul .done {
+    text-decoration: line-through;
+    background-color: #61823d;
+    color: white;
+}
+
+img {
+    width: 40px;
+    opacity: 0;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.task:hover img {
+    opacity: 1;
+}
