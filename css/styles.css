@@ -448,7 +448,7 @@ header.sticky .nav-bar {
     margin-bottom: 80px;
 }
 
-.edu-list .item {
+.edu-list .item, .bar {
     background: var(--card-bg-color);
     box-shadow: var(--box-shadow);
     border-bottom: 3px solid var(--second-color);
@@ -491,6 +491,11 @@ header.sticky .nav-bar {
     font-size: var(--small-font-size);
 }
 
+.bar .info .icon_distance {
+    display: flex;
+    gap: 10px;
+}
+
 .bar .info span {
     font-weight: 500;
 }
@@ -513,33 +518,14 @@ header.sticky .nav-bar {
     border-radius: 2px;
 }
 
-#skills_hover:hover {
-    content: 'ola';
+/**/
+
+.education .bars .bar  .info span {
+    width: 100px;
 }
 
-.bar .design:before {
-    width: 95%;
-}
-
-.bar .css:before {
-    width: 85%;
-}
-
-.bar .html:before {
-    width: 80%;
-}
-
-.bar .javascript:before {
-    width: 65%;
-}
-
-.bar .react:before {
-    width: 65%;
-}
-
-
-.bar .php:before {
-    width: 75%;
+.education .bars .bar  .info .icon {
+    width: 50px;
 }
 
 .experience-card {
